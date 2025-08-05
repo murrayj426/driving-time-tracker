@@ -4,13 +4,13 @@ import styles from './App.module.css';
 const categories = [
   'Assigning Priority P1/P2 Incidents',
   'Assigning SDM Escalations',
-  'Reviewing Dashboard & Inbox for Handoffs',
-  'Reviewing Aging & Upcoming Tickets for Updates',
-  'Assigning First Access Tickets Before Breach',
-  'Assigning Tickets/Tasks from WebEx Spaces',
+  'Reviewing Dashboard and Inbox for Handoffs',
+  'Reviewing Aging and Upcoming Aging Tickets for continued updates',
+  'Assigning out First Access Tickets before breaching',
+  'Assigning out Tickets or Tasks from other team WebEx spaces',
   'Ticket Escalation Reviews',
-  'Normal Change Request Approving',
-  'Assess Out-of-Scope & Wrongly Assigned Tickets'
+  'Normal Change Request approving',
+  'Assess Out of scope and wrongly assigned Tickets'
 ];
 
 
