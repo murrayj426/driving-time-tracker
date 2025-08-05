@@ -1,5 +1,7 @@
+
 import React, { useState, useEffect } from 'react';
 import styles from './App.module.css';
+import { Analytics } from '@vercel/analytics/react';
 
 const categories = [
   'Assigning priority P1/P2 incidents',
@@ -78,6 +80,7 @@ function App() {
 
       <button onClick={copyToClipboard} className={styles.copyButton}>Copy to Clipboard</button>
       <button onClick={resetTimes} className={styles.copyButton} style={{ marginTop: '1rem', backgroundColor: '#cc4444' }}>Reset All</button>
+      <Analytics />
     </div>
   );
 }
