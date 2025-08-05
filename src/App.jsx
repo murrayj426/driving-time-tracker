@@ -10,7 +10,7 @@ const categories = [
   'Assigning out tickets or tasks from ther team WebEx spaces',
   'Ticket escalation reviews',
   'Normal Change Request approving',
-  'Assess out of scope and wrongly assigned Tickets'
+  'Assess out of scope and wrongly assigned tickets'
 ];
 
 
