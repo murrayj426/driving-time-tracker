@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 import styles from './App.module.css';
 
 const categories = [
-  'Assigning Priority P1/P2 Incidents',
-  'Assigning SDM Escalations',
-  'Reviewing Dashboard and Inbox for Handoffs',
-  'Reviewing Aging and Upcoming Aging Tickets for continued updates',
-  'Assigning out First Access Tickets before breaching',
-  'Assigning out Tickets or Tasks from other team WebEx spaces',
-  'Ticket Escalation Reviews',
+  'Assigning priority P1/P2 incidents',
+  'Assigning SDM escalations',
+  'Reviewing dashboard and inbox for handoffs',
+  'Reviewing aging and upcoming aging tickets for continued updates',
+  'Assigning out First Access tickets before breaching',
+  'Assigning out tickets or tasks from ther team WebEx spaces',
+  'Ticket escalation reviews',
   'Normal Change Request approving',
-  'Assess Out of scope and wrongly assigned Tickets'
+  'Assess out of scope and wrongly assigned Tickets'
 ];
 
 
