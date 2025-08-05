@@ -5,7 +5,7 @@ const categories = [
   'Assigning priority P1/P2 incidents',
   'Assigning SDM escalations',
   'Reviewing dashboard and inbox for handoffs',
-  'Reviewing aging and upcoming aging tickets for continued updates',
+  'Reviewing aging and upcoming aging tickets for updates',
   'Assigning out First Access tickets before breaching',
   'Assigning out tickets or tasks from ther team WebEx spaces',
   'Ticket escalation reviews',
