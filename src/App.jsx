@@ -7,7 +7,7 @@ const categories = [
   'Reviewing dashboard and inbox for handoffs',
   'Reviewing aging and upcoming aging tickets for updates',
   'Assigning out First Access tickets before breaching',
-  'Assigning out tickets or tasks from ther team WebEx spaces',
+  'Assigning out tickets or tasks from other WebEx spaces',
   'Ticket escalation reviews',
   'Normal Change Request approving',
   'Assess out of scope and wrongly assigned tickets'
