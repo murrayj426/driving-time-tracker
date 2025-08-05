@@ -13,11 +13,31 @@ const categories = [
   'Assess Out-of-Scope & Wrongly Assigned Tickets'
 ];
 
+
 function App() {
-  const [times, setTimes] = useState(() => {
+  const getInitialTimes = () => {
     const saved = localStorage.getItem('drivingTimes');
-    return saved ? JSON.parse(saved) : Object.fromEntries(categories.map(c => [c, 0]));
-  });
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        // Check if all current categories exist in saved data and no extra keys
+        const savedKeys = Object.keys(parsed);
+        const allMatch =
+          savedKeys.length === categories.length &&
+          categories.every((cat) => savedKeys.includes(cat));
+        if (allMatch) {
+          return parsed;
+        }
+      } catch (e) {
+        // If parsing fails, fall through to reset
+      }
+    }
+    // If no saved data or mismatch, reset
+    const reset = Object.fromEntries(categories.map((c) => [c, 0]));
+    localStorage.setItem('drivingTimes', JSON.stringify(reset));
+    return reset;
+  };
+  const [times, setTimes] = useState(getInitialTimes);
 
   useEffect(() => {
     localStorage.setItem('drivingTimes', JSON.stringify(times));
